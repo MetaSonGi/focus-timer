@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>집중 타이머 — 뽀모도로</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>⏱️ 집중 타이머</h1>
+  <p class="sub">뽀모도로 테크닉으로 몰입하기</p>
+</header>
+
+<main>
+  <div class="timer-card">
+    <div class="modes">
+      <button class="mode active" data-min="25">집중 25분</button>
+      <button class="mode" data-min="5">휴식 5분</button>
+      <button class="mode" data-min="15">휴식 15분</button>
+      <button class="mode custom" id="customMode">⚙ 직접 설정</button>
+    </div>
+    <div class="ring-wrap">
+      <svg viewBox="0 0 200 200" class="ring">
+        <circle cx="100" cy="100" r="88" class="ring-bg" />
+        <circle id="ringFg" cx="100" cy="100" r="88" class="ring-fg" />
+      </svg>
+      <div class="time-text">
+        <div id="timeLeft">25:00</div>
+        <div id="phaseLabel" class="phase">준비</div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="startBtn" class="btn primary">▶ 시작</button>
+      <button id="resetBtn" class="btn">↺ 리셋</button>
+    </div>
+    <div class="task-row">
+      <input id="taskInput" type="text" placeholder="지금 할 일 (예: 보고서 초안)" maxlength="60" />
+    </div>
+  </div>
+
+  <div class="stats-card">
+    <h2>📊 오늘의 기록</h2>
+    <div class="stat-row">
+      <div class="stat"><span id="todayMin" class="num">0</span><span class="unit">분 집중</span></div>
+      <div class="stat"><span id="todayCount" class="num">0</span><span class="unit">세션</span></div>
+      <div class="stat"><span id="streak" class="num">0</span><span class="unit">일 연속</span></div>
+    </div>
+    <div id="weekChart" class="week-chart"></div>
+    <h2>🕘 세션 로그</h2>
+    <ul id="logList" class="log-list"></ul>
+  </div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
