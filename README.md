@@ -1,8 +1,16 @@
-# 집중 타이머 — 뽀모도로
+# ⏱️ 집중 타이머 | Focus Timer
+
+> 뽀모도로 타이머 + 세션 기록·주간 차트  
+> Pomodoro timer with session history and weekly charts
+
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen?style=flat-square)](https://metasongi.github.io/focus-timer/) ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square)
+
+🌐 **Live:** https://metasongi.github.io/focus-timer/
+
+---
 
 뽀모도로 테크닉 기반 집중 타이머 + 세션 기록 웹앱.
 
-🌐 **바로 실행:** https://metasongi.github.io/focus-timer/
 
 ## 기능
 
@@ -18,3 +26,9 @@
 
 - Vanilla JS + SVG + Web Audio API
 - 완전 클라이언트 사이드
+
+---
+
+## English Summary
+
+Pomodoro timer with session history and weekly charts.
